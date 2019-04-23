@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/capco-challenge/precache-manifest.f67ec68def6a7145e8cfbb63331c07cc.js"
+  "/capco-challenge/precache-manifest.0a465acfe79cb7bff7a07e7e91600a08.js"
 );
 
 workbox.clientsClaim();
