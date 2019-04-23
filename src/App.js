@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import ImageBox from './components/ImageBox.js';
 import './App.css';
 import './styles/boxes.css';
