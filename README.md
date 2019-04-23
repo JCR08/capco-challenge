@@ -1,5 +1,7 @@
 # John Rowell's Moving Tiles Challenge
 
+This project is hosted at: https://jcr08.github.io/capco-challenge/
+
 ## Back-End - Express
 The backend was created using express and sending back a some simple json data that includes an array or the character name and an image url.
 
