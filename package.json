@@ -13,6 +13,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage" : "http://jcr08.github.io/capco-challenge",
   "eslintConfig": {
     "extends": "react-app"
   },
