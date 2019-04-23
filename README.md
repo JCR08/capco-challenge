@@ -30,4 +30,4 @@ Finally there is also a gridRow style that again checks the index of the image. 
 
 After that it was a matter of running the build of the app and then deploying it to GitHub pages.
 
-I've probably spent about **2 days** working on this project, maybe a little more if you include the time spent thinking about it, but not actually being on a computer.
+I've probably spent about **2 days** working on this project, maybe a little more if you include the time spent thinking about it, when I wasn't able to actually be working on it.
