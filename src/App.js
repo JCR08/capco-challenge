@@ -1,30 +1,42 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import ImageBox from './components/ImageBox.js';
 import './App.css';
+import './styles/boxes.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      images: [],
+      bigTop: 2,
+      bigBottom: 9,
+    }
+    this.toggleBig = this.toggleBig.bind(this);
+  }
+
   componentDidMount() {
     fetch('https://fathomless-reaches-65003.herokuapp.com/')
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(images => this.setState({ images }));
   }
+
+  toggleBig(index) {
+    if(index<9){
+      this.setState({bigTop: index})
+    } else {
+      this.setState({bigBottom: index})
+    }
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div className="boxContainer">
+          {this.state.images.map((image, index) =>
+            <ImageBox key={image.name} image={image} index={index} toggleBig={this.toggleBig} bigBox={(index<9) ? this.state.bigTop : this.state.bigBottom}/>
+          )}
+        </div>
       </div>
     );
   }

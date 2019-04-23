@@ -1,0 +1,25 @@
+.boxContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2px 2px;
+  justify-content: center;
+  height: 600px; }
+  .boxContainer .box {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .boxContainer .box:hover {
+      cursor: pointer; }
+    .boxContainer .box.bigBox {
+      animation-duration: 0.25s;
+      animation-name: slidein; }
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+/*# sourceMappingURL=boxes.css.map */
