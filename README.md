@@ -1,13 +1,13 @@
 # John Rowell's Moving Tiles Challenge
 
-##Back-End - Express
+## Back-End - Express
 The backend was created using express and sending back a some simple json data that includes an array or the character name and an image url.
 
 This backend server is hosted on Heroku.
 
 This was my first time doing this, but after a quick youtube video I was able to get this up and running pretty smoothly.
 
-##Front-End - React
+## Front-End - React
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 After getting server working, fetching the data was the next step. Thankfully all of the data came through correctly and there was no trouble shooting needed with the server. After the fetch, I set the state with an array of the images.
