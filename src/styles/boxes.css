@@ -11,15 +11,5 @@
     background-repeat: no-repeat; }
     .boxContainer .box:hover {
       cursor: pointer; }
-    .boxContainer .box.bigBox {
-      animation-duration: 0.25s;
-      animation-name: slidein; }
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; }
-  to {
-    margin-left: 0%;
-    width: 100%; } }
 
 /*# sourceMappingURL=boxes.css.map */
